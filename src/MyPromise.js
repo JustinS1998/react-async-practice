@@ -17,15 +17,16 @@ export function MyPromise(props) {
         .then((res) => setMyMessage(res))
         .catch((err) => {
             setMyMessage('error');
-            console.log(err);
+            //console.log(err);
         });
     }
 
     return (
         <div className='thin-border'>
             <p>50% chance of resolve or reject using a promise</p>
-            <p>{myMessage}</p>
             <button onClick={handleClick}>Retry</button>
+            <p>{myMessage}</p>
+            
         </div>
     );
 }
