@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import {MyPromise} from './MyPromise';
+import './index.css';
 
 function App(props) {
     return (
         <>
-            <h1>Hello world</h1>
+            <h1>Asychronous Practice</h1>
+            <MyPromise />
         </>
     );
 }
